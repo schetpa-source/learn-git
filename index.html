@@ -29,9 +29,28 @@
             color: #666;
             font-size: 18px;
         }
+        .cat {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 50px;
+        }
+        .hand {
+            display: inline-block;
+            animation: wave 1s infinite;
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(30deg); }
+        }
     </style>
 </head>
 <body>
+    <div class="cat">
+        🐱
+        <span class="hand">👋</span>
+    </div>
     <div class="container">
         <h1>Welcome!</h1>
         <p>Learn Git - Get Started Today</p>
